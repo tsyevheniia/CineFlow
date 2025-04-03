@@ -5,16 +5,17 @@
     <title>CineFlow</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
 <nav class="navbar w-100 py-4 position-fixed z-1">
     <div class="container">
         <img class="navbar-brand" src="images/logo-transparent.png" alt="" style="width: 10rem">
-        <a class="btn btn-primary text-white"> Sign In</a>
+        <a class="btn btn-primary text-white" href="registration.html"> Sign In</a>
     </div>
 </nav>
-<header class="header position-absolute z-0 h-100 w-100 py-5">
-    <div class="text-container h-100 w-100 position-relative py-5 mt-5">
+<header class="header d-flex justify-content-center align-items-center position-relative z-0 min-vh-100 w-100 py-5 ">
+    <div class="text-container h-100 w-100 position-relative z-1">
         <h1 class="w-75 m-auto text-center display-5 text-white mt-5 pt-5 ">Your Favorite Shows, Movies - Streaming Now</h1>
         <p class="w-50 m-auto text-center text-white mt-3 mb-5">No ads, no interruptions, just endless hours of entertainment.</p>
 
@@ -29,6 +30,39 @@
         </form>
     </div>
 </header>
+<div class="bg1 py-1"></div>
+<section id="accessibility" class="w-100 h-100 min-vh-100 bg-secondary" >
+    <div class="container d-flex flex-column justify-content-center align-content-center py-5 flex-wrap">
+        <h4 class="text-white display-5 w-100 text-center mb-3">Accessible on your favourite devices</h4>
+        <p class="text-white text-center mb-3">Watch your favorite shows and movies in high quality across all your devices, from TVs to mobile phones, with no ads or interruptions.</p>
+        <div class="d-flex gap-1 justify-content-center w-100 my-3">
+            <div class="d-flex flex-column w-100 ">
+                <i class="bi bi-tv text-white text-center icon w-100"></i>
+                <h4 class="text-white text-center">TV</h4>
+                <p class="text-white text-center">Watch your favorite movies and shows in stunning HD on your big-screen TV, and enjoy a cinematic experience from the comfort of your living room.</p>
+            </div>
+
+            <div class="d-flex flex-column w-100 ">
+                <i class="bi bi-laptop text-white text-center icon w-100"></i>
+                <h4 class="text-white text-center">Computers</h4>
+                <p class="text-white text-center w-75 mx-auto">Enjoy high-quality streaming on your computer. Whether you're at home or on the go, you won't miss a moment.</p>
+            </div>
+
+            <div class="d-flex flex-column w-100 ">
+                <i class="bi bi-tablet text-white text-center icon"></i>
+                <h4 class="text-white text-center">Tablets</h4>
+                <p class="text-white text-center w-75 mx-auto">Stream movies and shows directly from your tablet, with full control over your viewing experience.</p>
+            </div>
+
+            <div class="d-flex flex-column w-100 ">
+                <i class="bi bi-phone text-white text-center icon"></i>
+                <h4 class="text-white text-center">Mobile Phones</h4>
+                <p class="text-white text-center">Enjoy your favorite content on the go with smooth, high-quality streaming directly on your mobile phone.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
 <script src="js/script.js"></script>
 <script src="js/bootstrap.js"></script>
 </body>
