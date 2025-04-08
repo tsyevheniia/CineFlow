@@ -83,7 +83,7 @@ const renderTopRatedFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -95,7 +95,7 @@ const renderTopRatedFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -107,7 +107,7 @@ const renderTopRatedFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -119,7 +119,7 @@ const renderTopRatedFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -131,7 +131,7 @@ const renderTopRatedFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -147,7 +147,7 @@ const renderNowPlayingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -159,7 +159,7 @@ const renderNowPlayingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -171,7 +171,7 @@ const renderNowPlayingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -183,7 +183,7 @@ const renderNowPlayingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -195,7 +195,7 @@ const renderNowPlayingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -211,7 +211,7 @@ const renderUpcomingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -223,7 +223,7 @@ const renderUpcomingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -235,7 +235,7 @@ const renderUpcomingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -247,7 +247,7 @@ const renderUpcomingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -259,7 +259,7 @@ const renderUpcomingFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -275,7 +275,7 @@ const renderPopularFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -287,7 +287,7 @@ const renderPopularFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -299,7 +299,7 @@ const renderPopularFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -311,7 +311,7 @@ const renderPopularFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
@@ -323,7 +323,7 @@ const renderPopularFilms = async function () {
          <div class="card mx-4" style="width: 16rem;">
            <img src="${url}${film.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
-           <div class="card-body">
+           <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
              <p class="card-text">${film.overview}</p>
            </div>
