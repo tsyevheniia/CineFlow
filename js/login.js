@@ -33,5 +33,3 @@ const checkLogin = (e) => {
         alert('This account does not exist.');
     }
 };
-
-document.querySelector('#loginForm').addEventListener('submit', checkLogin);

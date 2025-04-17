@@ -59,7 +59,7 @@ const renderModalWindow = () => {
 
     if (actualUser) {
         modalText.innerHTML = `
-            <p><strong>Login:</strong> ${actualUser.name}</p>
+            <p><strong>UserName:</strong> ${actualUser.name}</p>
             <p><strong>Email:</strong> ${actualUser.email}</p>
             <p><strong>Date of Registration:</strong> ${actualUser.date}</p>
         `;
@@ -67,7 +67,5 @@ const renderModalWindow = () => {
         modalText.innerHTML = `<p>No user information available. Please log in.</p>`;
     }
 };
-
-modalBtn.addEventListener('click', renderModalWindow);
 
 modalBtn.addEventListener('click', renderModalWindow);
