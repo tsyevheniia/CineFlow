@@ -18,12 +18,12 @@ const popularTvSeriesContainer = document.getElementById('popularTvSeries');
 const popularTvSeriesContainer3 = document.getElementById('popularTvSeries3');
 const popularTvSeriesContainer4 = document.getElementById('popularTvSeries4');
 const popularTvSeriesContainer5 = document.getElementById('popularTvSeries5');
-const url = 'https://image.tmdb.org/t/p/w500/';
+const imageUrl = 'https://image.tmdb.org/t/p/w500/';
 
 
 
 
-const options = {
+const showOptions = {
     method: 'GET',
     headers: {
         accept: 'application/json',
@@ -32,26 +32,26 @@ const options = {
 };
 
 const getTopRatedTvSeries = function () {
-    return fetch('https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1', options)
+    return fetch('https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1', showOptions)
         .then(res => res.json())
         .then(res => res.results)
         .catch(err => console.error(err));
 }
 
 const getNowPlayingTvSeries = function () {
-    return fetch('https://api.themoviedb.org/3/tv/on_the_air?language=en-US&page=2', options)
+    return fetch('https://api.themoviedb.org/3/tv/on_the_air?language=en-US&page=2', showOptions)
         .then(res => res.json())
         .then(res => res.results)
         .catch(err => console.error(err));
 }
 const getUpcomingTvSeries = function () {
-    return fetch('https://api.themoviedb.org/3/tv/airing_today?language=en-US&page=1', options)
+    return fetch('https://api.themoviedb.org/3/tv/airing_today?language=en-US&page=1', showOptions)
         .then(res => res.json())
         .then(res => res.results)
         .catch(err => console.error(err));
 }
 const getPopularTvSeries = function () {
-    return fetch('https://api.themoviedb.org/3/tv/popular?language=en-US&page=1', options)
+    return fetch('https://api.themoviedb.org/3/tv/popular?language=en-US&page=1', showOptions)
         .then(res => res.json())
         .then(res => res.results)
         .catch(err => console.error(err));
@@ -62,7 +62,7 @@ const renderTopRatedTvSeries = async function () {
     data.slice(0, 4).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -74,7 +74,7 @@ const renderTopRatedTvSeries = async function () {
     data.slice(4, 8).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -86,7 +86,7 @@ const renderTopRatedTvSeries = async function () {
     data.slice(8, 12).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -98,7 +98,7 @@ const renderTopRatedTvSeries = async function () {
     data.slice(12, 16).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -110,7 +110,7 @@ const renderTopRatedTvSeries = async function () {
     data.slice(16, 20).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -126,7 +126,7 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(0, 4).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -138,7 +138,7 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(4, 8).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -150,7 +150,7 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(8, 12).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -162,7 +162,7 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(12, 16).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -174,7 +174,7 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(16, 20).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -190,7 +190,7 @@ const renderUpcomingTvSeries = async function () {
     data.slice(0, 4).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -202,7 +202,7 @@ const renderUpcomingTvSeries = async function () {
     data.slice(4, 8).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -214,7 +214,7 @@ const renderUpcomingTvSeries = async function () {
     data.slice(8, 12).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -226,7 +226,7 @@ const renderUpcomingTvSeries = async function () {
     data.slice(12, 16).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -238,7 +238,7 @@ const renderUpcomingTvSeries = async function () {
     data.slice(16, 20).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -254,7 +254,7 @@ const renderPopularTvSeries = async function () {
     data.slice(0, 4).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -266,7 +266,7 @@ const renderPopularTvSeries = async function () {
     data.slice(4, 8).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -278,7 +278,7 @@ const renderPopularTvSeries = async function () {
     data.slice(8, 12).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -290,7 +290,7 @@ const renderPopularTvSeries = async function () {
     data.slice(12, 16).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
@@ -302,7 +302,7 @@ const renderPopularTvSeries = async function () {
     data.slice(16, 20).forEach(show => {
         html = `
          <div class="card mx-4" style="width: 16rem;">
-           <img src="${url}${show.poster_path}" class="card-img-top" alt="...">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            <a href="#" class="btn btn-primary mt-2">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
