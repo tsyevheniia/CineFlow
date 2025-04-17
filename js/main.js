@@ -1,7 +1,7 @@
 const movieContainer = document.getElementById('movieContainer');
 const url = 'https://image.tmdb.org/t/p/original/';
 const inputSearch = document.getElementById('inputSearch');
-
+const modalBtn = document.getElementById('modalBtn');
 document.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         renderMovieContainer()
@@ -15,7 +15,7 @@ const options = {
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYzc2MDljYzExMGM5NjgwZDhhMGNjMGVjNTJkMDI5YiIsIm5iZiI6MTc0NDAzODc2NC44MDQsInN1YiI6IjY3ZjNlYjZjNmMzNTgzYzk3NTk5MzVjNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8dsabqerc-bpXrjFYtlPGbNt3VQb27YltuN5f5REcks'
     }
 };
-const getMovie = function (){
+const getMovie = function () {
     return fetch(`https://api.themoviedb.org/3/search/multi?query=${inputSearch.value}&include_adult=false&language=en-US&page=1`, options)
         .then(res => res.json())
         .then(res => res.results[0])
@@ -24,7 +24,11 @@ const getMovie = function (){
 
 const renderMovieContainer = async function () {
     let data = await getMovie();
-    if(inputSearch.value === "" || data === undefined) {alert("Wrong Name of Movie! Try Again!"); return};
+    if (inputSearch.value === "" || data === undefined) {
+        alert("Wrong Name of Movie! Try Again!");
+        return
+    }
+    ;
     let html = `
     <div class="row justify-content-center">
         <div class="col-md-8 mb-4">
@@ -46,6 +50,24 @@ const renderMovieContainer = async function () {
     </div>
     `;
     inputSearch.value = '';
-    movieContainer.innerHTML= html;
+    movieContainer.innerHTML = html;
 }
 
+const renderModalWindow = () => {
+    const actualUser = JSON.parse(localStorage.getItem('actualUser'));
+    const modalText = document.getElementById('modalUserText');
+
+    if (actualUser) {
+        modalText.innerHTML = `
+            <p><strong>Login:</strong> ${actualUser.name}</p>
+            <p><strong>Email:</strong> ${actualUser.email}</p>
+            <p><strong>Date of Registration:</strong> ${actualUser.date}</p>
+        `;
+    } else {
+        modalText.innerHTML = `<p>No user information available. Please log in.</p>`;
+    }
+};
+
+modalBtn.addEventListener('click', renderModalWindow);
+
+modalBtn.addEventListener('click', renderModalWindow);
