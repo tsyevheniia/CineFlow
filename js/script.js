@@ -13,5 +13,5 @@ document.addEventListener('scroll', (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', ()=>{
-    email.value = JSON.parse(localStorage.getItem('loginUser'));
+    if(email) email.value = JSON.parse(localStorage.getItem('loginUser'));
 })

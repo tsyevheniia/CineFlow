@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <title></title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg w-100 bg-primary">
@@ -26,26 +25,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="films.html">Movies</a>
+                    <a class="nav-link text-white" aria-current="page" href="main.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="shows.html">Tv Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="films.html">Movies</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
 <section class="min-vh-100 w-100 py-5">
-    <div class="container mt-5">
-        <h1 class="text-primary fw-bold mb-4">Search for Something to Watch</h1>
-        <div class="input-group my-5">
-            <input type="text" class="form-control bg-white text-black w-75" placeholder="Search for a Movie" aria-label="Enter title:" id="inputSearch" >
-            <button class="btn btn-lg border-1 border-light" type="button" id="btnSearch" onclick="renderMovieContainer()">Search</button>
-        </div>
-        <div id="movieContainer" class="mt-5">
-        </div>
-    </div>
+<div class="container" id="trailerContainer"></div>
 </section>
 <div class="modal" id="staticBackdrop">
     <div class="modal-dialog">
@@ -64,7 +57,7 @@
         </div>
     </div>
 </div>
-<div class="bg1 py-1"></div>
+<script src="js/script.js"></script>
 <script src="js/main.js"></script>
 <script src="js/movie.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

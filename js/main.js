@@ -28,11 +28,11 @@ const renderMovieContainer = async function () {
         alert("Wrong Name of Movie! Try Again!");
         return
     }
-    ;
+    localStorage.setItem('movieToWatch', JSON.stringify(data.name))
     let html = `
     <div class="row justify-content-center">
         <div class="col-md-8 mb-4">
-            <div class="card border-0 rounded-3 overflow-hidden" style="background-color: #1a1a1a; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);">
+            <div class="card border-0 rounded-3 overflow-hidden" style="background-color: #1a1a1a; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); width: 100%">
                 <div class="row g-0">
                     <div class="col-md-4 d-flex align-items-center">
                         <img alt="" src="${url}${data.poster_path}" class="img-fluid rounded-start shadow">
@@ -42,7 +42,7 @@ const renderMovieContainer = async function () {
                         <p class="text-light">${data.overview}</p>
                         <p class="text-light"><span class="text-primary fw-bold">Release Date:</span> ${data.media_type === 'movie' ? data.release_date : data.first_air_date}</p>
                         <p class="text-light"><span class="text-primary fw-bold">Rating:</span> ${data.vote_average}</p>
-                        <a href="#" class="btn btn-primary mt-2">Watch Now</a>
+                        <a href="movie.html" class="btn btn-primary mt-2" id="watchBtn">Watch Now</a>
                     </div>
                 </div>
             </div>
