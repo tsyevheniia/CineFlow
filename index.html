@@ -22,10 +22,15 @@
         <p class="w-50 m-auto text-center text-white mt-3 mb-5">No ads, no interruptions, just endless hours of
             entertainment.</p>
 
-        <form class="row g-3 w-50 m-auto justify-content-center ">
+        <form class="row g-3 w-50 m-auto justify-content-center needs-validation" id="mainForm" novalidate>
             <div class="col-auto w-50">
                 <label for="inputEmail" class="visually-hidden">Email</label>
-                <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email">
+                <input
+                        type="email"
+                        class="form-control form-control-lg"
+                        id="inputEmail"
+                        placeholder="Email"
+                        required>
             </div>
             <div class="col-auto">
                 <button type="submit" class="btn btn-primary btn-lg mb-3" id="emailBtn">Sign Up</button>
@@ -219,6 +224,7 @@
     </div>
 </section>
 <script src="js/script.js"></script>
+<script src="js/registration.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

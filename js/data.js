@@ -48,4 +48,3 @@ const saveDate = (e) => {
         window.location.href = 'main.html';
     }
 };
-document.querySelector('#loginForm').addEventListener('submit', checkLogin);

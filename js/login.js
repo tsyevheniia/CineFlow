@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const emailInputSignIn = document.getElementById('exampleInputEmail1');
+    emailInputSignIn.value = JSON.parse( localStorage.getItem('loginUser'));
+});
+
 (() => {
     'use strict';
 
@@ -23,13 +28,19 @@ const checkLogin = (e) => {
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
     const actualUser = users.find(user => user.email === email && user.password === password);
+    const checkingPassword = users.find(user=> user.password !== password);
 
     if (actualUser) {
         localStorage.setItem('actualUser', JSON.stringify(actualUser));
+        localStorage.removeItem('loginUser');
         window.location.href = 'main.html';
-    } else {
+    }else if(checkingPassword){
+        alert('Please enter correct password');
+    }
+     else {
         document.getElementById('exampleInputEmail1').value = '';
         document.getElementById('exampleInputPassword1').value = '';
         alert('This account does not exist.');
     }
 };
+document.querySelector('#loginForm').addEventListener('submit', checkLogin);
