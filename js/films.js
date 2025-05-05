@@ -19,7 +19,7 @@ const popularFilmsContainer3 = document.getElementById('popularFilms3');
 const popularFilmsContainer4 = document.getElementById('popularFilms4');
 const popularFilmsContainer5 = document.getElementById('popularFilms5');
 const imageUrl = 'https://image.tmdb.org/t/p/w500/';
-
+let allFilms = [];
 
 
 const optionsTopRated = {
@@ -78,6 +78,7 @@ const getPopularFilms = function () {
 
 const renderTopRatedFilms = async function () {
     const data = await getTopRatedFilms();
+    allFilms.push(data)
     data.slice(0,4).forEach(film => {
         html = `
          <div class="card pb-3  " >
@@ -142,6 +143,7 @@ const renderTopRatedFilms = async function () {
 renderTopRatedFilms()
 const renderNowPlayingFilms = async function () {
     const data = await getNowPlayingFilms();
+    allFilms.push(data)
     data.slice(0,4).forEach(film => {
         html = `
          <div class="card pb-3 " >
@@ -206,6 +208,7 @@ const renderNowPlayingFilms = async function () {
 renderNowPlayingFilms()
 const renderUpcomingFilms = async function () {
     const data = await getUpcomingFilms();
+    allFilms.push(data)
     data.slice(0,4).forEach(film => {
         html = `
          <div class="card pb-3 " >
@@ -270,6 +273,8 @@ const renderUpcomingFilms = async function () {
 renderUpcomingFilms()
 const renderPopularFilms = async function () {
     const data = await getPopularFilms();
+    allFilms.push(data)
+    console.log(allFilms)
     data.slice(0,4).forEach(film => {
         html = `
          <div class="card pb-3 " >
