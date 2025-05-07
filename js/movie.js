@@ -1,5 +1,11 @@
 let apiKey = "AIzaSyBCdqAAUk5tEuwoVqm2s-XbYIpKbvZ1cuw";
-const movieToWatch = JSON.parse(localStorage.getItem('movieToWatch'));
+let movieToWatch = localStorage.getItem('movieToWatch');
+try{
+    movieToWatch = JSON.parse(localStorage.getItem('movieToWatch'));
+}
+catch(e){
+
+}
 const query = `${movieToWatch} trailer`;
 const trailerContainer = document.getElementById('trailerContainer');
 async function searchOnYoutube() {

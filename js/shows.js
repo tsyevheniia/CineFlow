@@ -21,8 +21,6 @@ const popularTvSeriesContainer5 = document.getElementById('popularTvSeries5');
 const imageUrl = 'https://image.tmdb.org/t/p/w500/';
 
 
-
-
 const showOptions = {
     method: 'GET',
     headers: {
@@ -63,7 +61,7 @@ const renderTopRatedTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -75,7 +73,7 @@ const renderTopRatedTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -87,7 +85,7 @@ const renderTopRatedTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -99,7 +97,7 @@ const renderTopRatedTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -111,7 +109,7 @@ const renderTopRatedTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -127,7 +125,7 @@ const renderNowPlayingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -139,7 +137,7 @@ const renderNowPlayingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-            <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -151,7 +149,7 @@ const renderNowPlayingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -163,7 +161,7 @@ const renderNowPlayingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-            <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -175,7 +173,7 @@ const renderNowPlayingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -191,7 +189,7 @@ const renderUpcomingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
               <p class="card-text">${show.overview}</p>
@@ -203,7 +201,7 @@ const renderUpcomingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-            <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -215,7 +213,7 @@ const renderUpcomingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px"> 
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
             <p class="card-text">${show.overview}</p>
@@ -227,7 +225,7 @@ const renderUpcomingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-            <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
 <p class="card-text">${show.overview}</p>
@@ -239,7 +237,7 @@ const renderUpcomingTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
 <p class="card-text">${show.overview}</p>
@@ -255,7 +253,7 @@ const renderPopularTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -267,7 +265,7 @@ const renderPopularTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-            <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
               <p class="card-text">${show.overview}</p>
@@ -279,7 +277,7 @@ const renderPopularTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.overview}</p>
@@ -291,7 +289,7 @@ const renderPopularTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-            <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
             <p class="card-text">${show.overview}</p>
@@ -303,7 +301,7 @@ const renderPopularTvSeries = async function () {
         html = `
          <div class="card pb-3" >
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           <a href="movie.html" class="btn btn-primary mt-2">Watch Now</a>
+           <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0">
              <h5 class="card-title">${show.name}</h5>
             <p class="card-text">${show.overview}</p>
@@ -313,3 +311,11 @@ const renderPopularTvSeries = async function () {
     })
 }
 renderPopularTvSeries()
+
+document.addEventListener('click', function(event) {
+    if (event.target && event.target.matches('a.shows')) {
+        event.preventDefault()
+        localStorage.setItem('movieToWatch',event.target.dataset.name);
+        window.location.href = 'movie.html';
+    }
+})
