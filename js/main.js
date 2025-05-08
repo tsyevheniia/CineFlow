@@ -31,13 +31,13 @@ const renderMovieContainer = async function () {
     localStorage.setItem('movieToWatch', JSON.stringify(data.name))
     let html = `
     <div class="row justify-content-center">
-        <div class="col-md-8 mb-4">
+        <div class="col-lg-10 mb-4 col-12">
             <div class="card border-0 rounded-3 overflow-hidden" style="background-color: #1a1a1a; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); width: 100%">
                 <div class="row g-0">
-                    <div class="col-md-4 d-flex align-items-center">
+                    <div class="col-4 d-flex align-items-center">
                         <img alt="" src="${url}${data.poster_path}" class="img-fluid rounded-start shadow">
                     </div>
-                    <div class="col-md-8 p-4 d-flex flex-column justify-content-center">
+                    <div class="col-8 p-4 d-flex flex-column justify-content-center">
                         <h5 class="text-primary fs-1">${data.media_type === 'movie' ? data.title : data.name}</h5>
                         <p class="text-light">${data.overview}</p>
                         <p class="text-light"><span class="text-primary fw-bold">Release Date:</span> ${data.media_type === 'movie' ? data.release_date : data.first_air_date}</p>
