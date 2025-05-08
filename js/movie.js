@@ -9,7 +9,6 @@ catch(e){
 const query = `${movieToWatch} trailer`;
 const trailerContainer = document.getElementById('trailerContainer');
 async function searchOnYoutube() {
-    console.log('hello');
     try {
         const response = await fetch(
             `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${apiKey}&type=video&maxResults=1`
