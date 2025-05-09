@@ -60,7 +60,9 @@ const renderTopRatedTvSeries = async function () {
     data.slice(0, 4).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+           </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -72,7 +74,9 @@ const renderTopRatedTvSeries = async function () {
     data.slice(4, 8).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -84,7 +88,9 @@ const renderTopRatedTvSeries = async function () {
     data.slice(8, 12).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -96,7 +102,9 @@ const renderTopRatedTvSeries = async function () {
     data.slice(12, 16).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -108,7 +116,9 @@ const renderTopRatedTvSeries = async function () {
     data.slice(16, 20).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -124,7 +134,9 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(0, 4).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -136,7 +148,9 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(4, 8).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -148,7 +162,9 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(8, 12).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -160,7 +176,9 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(12, 16).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -172,7 +190,9 @@ const renderNowPlayingTvSeries = async function () {
     data.slice(16, 20).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -188,7 +208,9 @@ const renderUpcomingTvSeries = async function () {
     data.slice(0, 4).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -200,7 +222,9 @@ const renderUpcomingTvSeries = async function () {
     data.slice(4, 8).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -212,7 +236,10 @@ const renderUpcomingTvSeries = async function () {
     data.slice(8, 12).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px"> 
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
+           
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -224,7 +251,9 @@ const renderUpcomingTvSeries = async function () {
     data.slice(12, 16).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -236,7 +265,9 @@ const renderUpcomingTvSeries = async function () {
     data.slice(16, 20).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -252,7 +283,9 @@ const renderPopularTvSeries = async function () {
     data.slice(0, 4).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -264,7 +297,9 @@ const renderPopularTvSeries = async function () {
     data.slice(4, 8).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
              <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -276,7 +311,9 @@ const renderPopularTvSeries = async function () {
     data.slice(8, 12).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+            </div>
              <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -288,7 +325,9 @@ const renderPopularTvSeries = async function () {
     data.slice(12, 16).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+           </div>
              <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -300,7 +339,9 @@ const renderPopularTvSeries = async function () {
     data.slice(16, 20).forEach(show => {
         html = `
          <div class="card pb-3" >
-           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+           <div class="img-wrapper">
+           <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
+           </div>        
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
@@ -312,10 +353,10 @@ const renderPopularTvSeries = async function () {
 }
 renderPopularTvSeries()
 
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     if (event.target && event.target.matches('a.shows')) {
         event.preventDefault()
-        localStorage.setItem('movieToWatch',event.target.dataset.name);
+        localStorage.setItem('movieToWatch', event.target.dataset.name);
         window.location.href = 'movie.html';
     }
 })

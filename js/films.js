@@ -82,7 +82,9 @@ const renderTopRatedFilms = async function () {
     data.slice(0,4).forEach(film => {
         html = `
          <div class="card pb-3  " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -94,7 +96,9 @@ const renderTopRatedFilms = async function () {
     data.slice(4,8).forEach(film => {
         html = `
          <div class="card pb-3  " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -106,7 +110,9 @@ const renderTopRatedFilms = async function () {
     data.slice(8,12).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -118,7 +124,9 @@ const renderTopRatedFilms = async function () {
     data.slice(12,16).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -130,7 +138,9 @@ const renderTopRatedFilms = async function () {
     data.slice(16,20).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -147,7 +157,9 @@ const renderNowPlayingFilms = async function () {
     data.slice(0,4).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -159,7 +171,9 @@ const renderNowPlayingFilms = async function () {
     data.slice(4,8).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
              <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -171,7 +185,9 @@ const renderNowPlayingFilms = async function () {
     data.slice(8,12).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -183,7 +199,9 @@ const renderNowPlayingFilms = async function () {
     data.slice(12,16).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
              <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -195,7 +213,9 @@ const renderNowPlayingFilms = async function () {
     data.slice(16,20).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -212,7 +232,9 @@ const renderUpcomingFilms = async function () {
     data.slice(0,4).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -224,7 +246,9 @@ const renderUpcomingFilms = async function () {
     data.slice(4,8).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
              <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -236,7 +260,9 @@ const renderUpcomingFilms = async function () {
     data.slice(8,12).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -248,7 +274,9 @@ const renderUpcomingFilms = async function () {
     data.slice(12,16).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
              <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -260,7 +288,9 @@ const renderUpcomingFilms = async function () {
     data.slice(16,20).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -278,8 +308,10 @@ const renderPopularFilms = async function () {
     data.slice(0,4).forEach(film => {
         html = `
          <div class="card pb-3 " >
-         <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
-           
+         <div class="img-wrapper">
+         <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+ 
+ </div>          
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -303,7 +335,9 @@ const renderPopularFilms = async function () {
     data.slice(8,12).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -315,7 +349,9 @@ const renderPopularFilms = async function () {
     data.slice(12,16).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
              <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
@@ -327,7 +363,9 @@ const renderPopularFilms = async function () {
     data.slice(16,20).forEach(film => {
         html = `
          <div class="card pb-3 " >
-           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="..."  style="max-height: 350px">
+         <div class="img-wrapper">
+           <img src="${imageUrl}${film.poster_path}" class="card-img-top" alt="...">
+           </div>
             <a class="movies btn btn-primary mt-2" data-name="${film.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${film.title}</h5>
