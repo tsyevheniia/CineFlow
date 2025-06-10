@@ -20,7 +20,6 @@ mainForm.addEventListener('submit', (e) => {
         window.location.href ='registration.html'
     }
     else{
-        alert('There is such email address. Please sign in!');
         localStorage.setItem('loginUser', JSON.stringify(emailInput.value))
         window.location.href ='login.html'
     }

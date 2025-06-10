@@ -35,7 +35,6 @@ const getTopRatedTvSeries = function () {
         .then(res => res.results)
         .catch(err => console.error(err));
 }
-
 const getNowPlayingTvSeries = function () {
     return fetch('https://api.themoviedb.org/3/tv/on_the_air?language=en-US&page=2', showOptions)
         .then(res => res.json())
@@ -59,70 +58,80 @@ const renderTopRatedTvSeries = async function () {
     const data = await getTopRatedTvSeries();
     data.slice(0, 4).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
             <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         activatedTopRatedTvShowsContainer.insertAdjacentHTML('beforeend', html)
     })
     data.slice(4, 8).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         tvShowsTopRatedContainer.insertAdjacentHTML('beforeend', html)
     })
     data.slice(8, 12).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         tvShowsTopRatedContainer3.insertAdjacentHTML('beforeend', html)
     })
     data.slice(12, 16).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         tvShowsTopRatedContainer4.insertAdjacentHTML('beforeend', html)
     })
     data.slice(16, 20).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         tvShowsTopRatedContainer5.insertAdjacentHTML('beforeend', html)
@@ -133,70 +142,80 @@ const renderNowPlayingTvSeries = async function () {
     const data = await getNowPlayingTvSeries();
     data.slice(0, 4).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         activatedNowPlayingContainer.insertAdjacentHTML('beforeend', html)
     })
     data.slice(4, 8).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         nowPlayingContainer.insertAdjacentHTML('beforeend', html)
     })
     data.slice(8, 12).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         nowPlayingContainer3.insertAdjacentHTML('beforeend', html)
     })
     data.slice(12, 16).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         nowPlayingContainer4.insertAdjacentHTML('beforeend', html)
     })
     data.slice(16, 20).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         nowPlayingContainer5.insertAdjacentHTML('beforeend', html)
@@ -207,35 +226,39 @@ const renderUpcomingTvSeries = async function () {
     const data = await getUpcomingTvSeries();
     data.slice(0, 4).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-              <p class="card-text">${show.overview}</p>
+              <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         activatedUpcomingTvSeriesContainer.insertAdjacentHTML('beforeend', html)
     })
     data.slice(4, 8).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         upcomingTvSeriesContainer.insertAdjacentHTML('beforeend', html)
     })
     data.slice(8, 12).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
@@ -243,35 +266,41 @@ const renderUpcomingTvSeries = async function () {
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-            <p class="card-text">${show.overview}</p>
+            <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         upcomingTvSeriesContainer3.insertAdjacentHTML('beforeend', html)
     })
     data.slice(12, 16).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-<p class="card-text">${show.overview}</p>
+                <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         upcomingTvSeriesContainer4.insertAdjacentHTML('beforeend', html)
     })
     data.slice(16, 20).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-<p class="card-text">${show.overview}</p>
+                <p class="card-text">${show.overvieshowngth > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         upcomingTvSeriesContainer5.insertAdjacentHTML('beforeend', html)
@@ -282,70 +311,80 @@ const renderPopularTvSeries = async function () {
     const data = await getPopularTvSeries();
     data.slice(0, 4).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
             <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         activatedPopularTvSeriesContainer.insertAdjacentHTML('beforeend', html)
     })
     data.slice(4, 8).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
              <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-              <p class="card-text">${show.overview}</p>
+              <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         popularTvSeriesContainer.insertAdjacentHTML('beforeend', html)
     })
     data.slice(8, 12).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
             </div>
              <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-             <p class="card-text">${show.overview}</p>
+             <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         popularTvSeriesContainer3.insertAdjacentHTML('beforeend', html)
     })
     data.slice(12, 16).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            </div>
              <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-            <p class="card-text">${show.overview}</p>
+            <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         popularTvSeriesContainer4.insertAdjacentHTML('beforeend', html)
     })
     data.slice(16, 20).forEach(show => {
         html = `
-         <div class="card pb-3" >
+         <div class="card mb-4">
            <div class="img-wrapper">
            <img src="${imageUrl}${show.poster_path}" class="card-img-top" alt="...">
            </div>        
            <a class="shows btn btn-primary mt-2" data-name="${show.name}">Watch Now</a>
            <div class="card-body p-0 pt-3">
              <h5 class="card-title">${show.name}</h5>
-            <p class="card-text">${show.overview}</p>
+            <p class="card-text">${show.overview.length > 350 
+                ? show.overview.slice(0, 350).split(' ').slice(0, -1).join(' ').replace(/[.,!?;:]$/, '') + '...'
+                : show.overview}</p>
            </div>
          </div>`;
         popularTvSeriesContainer5.insertAdjacentHTML('beforeend', html)
