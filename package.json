@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "main": "js/script.js",
   "scripts": {
-    "sass:build": "sass --no-source-map scss:css",
-    "watch": "sass --watch scss:css"
+    "sass:build": "sass --no-source-map scss:public/css",
+    "watch": "sass --watch scss:public/css"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "express": "^5.1.0",
+    "mysql2": "^3.15.3"
   },
   "devDependencies": {
     "sass": "^1.87.0"
