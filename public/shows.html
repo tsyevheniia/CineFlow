@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+</head>
+<body style="display:none;">
+<nav class="navbar navbar-expand-lg w-100 bg-primary">
+    <div class="container">
+        <div>
+            <button type="button" class="btn btn-primary" id="modalBtn">
+                <i class="bi bi-person-circle fs-1 text-white"></i>
+            </button>
+        </div>
+
+        <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Przełącz nawigację">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="main.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="films.html">Filmy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="production.html">Oryginały</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="w-100 py-5">
+    <div class="container">
+        <h1 class="">Top 20 najwyżej ocenianych seriali</h1>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div id="topRated" class="carousel slide m-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="activatedTopRatedTvSeries" class="d-flex justify-content-center flex-wrap"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="topRatedTvSeries" class="d-flex justify-content-center flex-wrap"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="topRatedTvSeries3" class="d-flex justify-content-center flex-wrap"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="topRatedTvSeries4" class="d-flex justify-content-center flex-wrap"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="topRatedTvSeries5" class="d-flex justify-content-center flex-wrap"></div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#topRated" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Poprzedni</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#topRated" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Następny</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-100 py-5">
+    <div class="container">
+        <h1 class="">W trakcie emisji</h1>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div id="nowPlaying" class="carousel slide m-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="activatedNowPlayingTvSeries" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div id="nowPlayingTvSeries" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="nowPlayingTvSeries3" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="nowPlayingTvSeries4" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="nowPlayingTvSeries5" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#nowPlaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Poprzedni</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#nowPlaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Następny</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-100 py-5">
+    <div class="container">
+        <h1 class="">Nowe odcinki dzisiaj</h1>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div id="today" class="carousel slide m-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="activatedUpcomingTvSeries" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="upcomingTvSeries" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="upcomingTvSeries3" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="upcomingTvSeries4" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="upcomingTvSeries5" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#today" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Poprzedni</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#today" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Następny</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-100 py-5">
+    <div class="container">
+        <h1 class="">Popularne seriale</h1>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div id="popular" class="carousel slide m-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="activatedPopularTvSeries" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="popularTvSeries" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="popularTvSeries3" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="popularTvSeries4" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="popularTvSeries5" class="d-flex justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#popular" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Poprzedni</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#popular" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Następny</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="staticBackdrop">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Informacje o użytkowniku</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+            </div>
+            <div class="modal-body">
+                <div id="modalUserText">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="logOutBtn">Wyloguj się</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="movieInfoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-4 col-12 text-center">
+                            <img id="modalPoster"
+                                 class="img-fluid rounded shadow"
+                                 alt="">
+                        </div>
+                        <div class="col-md-8 col-12">
+                            <p id="modalDescription" class="text-light"></p>
+                            <p class="text-light mb-1">
+                                <span class="text-primary fw-bold">Data premiery:</span>
+                                <span id="modalRelease"></span>
+                            </p>
+
+                            <p class="text-light mb-3">
+                                <span class="text-primary fw-bold">Ocena:</span>
+                                <span id="modalRating"></span>
+                            </p>
+
+                            <a
+                                    href="movie.html"
+                                    class="btn btn-primary w-100"
+                                    id="modalWatchBtn"
+                                    data-bs-dismiss="modal">
+                                Obejrzyj zwiastun
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/shows.js"></script>
+<script src="js/modal.js"></script>
+</body>
+</html>

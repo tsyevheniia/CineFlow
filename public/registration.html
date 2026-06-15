@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rejestracja | CineFlow</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+</head>
+<body style="display: none">
+<nav class='navbar position-fixed w-100 z-1 py-4'>
+    <div class="container">
+        <a class="navbar-brand logo-link" href="index.html" aria-label="Przejdź do strony głównej">
+            <img class="logo-img" src="images/logo-transparent.png" alt="CineFlow logo" style="width: 10rem">
+        </a>
+        <a class="btn btn-primary px-4 py-2 text-white fw-medium" href="login.html">
+            Zaloguj się
+        </a>
+    </div>
+</nav>
+<header class="header d-flex justify-content-center align-items-center position-absolute z-0 h-100 w-100 py-5">
+    <div class="w-75 position-relative z-1">
+        <form class="h-100 m-auto p-3 text-white needs-validation" id="registerForm" method="post" novalidate>
+            <h3>Utwórz konto</h3>
+
+            <div class="my-3">
+                <label for="username" class="form-label">Nazwa użytkownika</label>
+                <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        pattern="^(?=.*[A-Za-z0-9])[A-Za-z0-9_]{3,20}$"
+                        maxlength="20"
+                        required>
+                <div class="invalid-feedback">
+                    Nazwa użytkownika musi mieć od 3 do 20 znaków.
+                </div>
+            </div>
+
+            <div class="my-3">
+                <label for="email" class="form-label">Adres e-mail</label>
+                <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        aria-describedby="emailHelp"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                        required>
+                <div class="invalid-feedback" id="emailFormatError">
+                    Proszę wprowadzić poprawny adres e-mail.
+                </div>
+
+                <div class="invalid-feedback" id="emailExistsError" style="display:none;">
+                    Ten adres e-mail jest już zarejestrowany.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Hasło</label>
+                <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        required>
+                <div class="invalid-feedback">
+                    Hasło musi zawierać co najmniej jedną cyfrę, jedną małą i jedną wielką literę oraz mieć minimum 8 znaków.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Potwierdź hasło</label>
+                <input
+                        type="password"
+                        class="form-control"
+                        id="confirmPassword"
+                        required>
+                <div class="invalid-feedback">
+                    Hasła nie są zgodne.
+                </div>
+            </div>
+
+            <div class="mt-2 w-100">
+                <button type="submit" class="btn btn-primary w-100">Zarejestruj się</button>
+            </div>
+        </form>
+    </div>
+</header>
+<script src="js/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+</head>
+
+<body style="display:none;">
+<nav class="navbar navbar-expand-lg w-100 bg-primary">
+    <div class="container">
+        <div>
+            <button type="button" class="btn btn-primary" id="modalBtn">
+                <i class="bi bi-person-circle fs-1 text-white"></i>
+            </button>
+        </div>
+
+        <button class="navbar-toggler text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="main.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="films.html">Filmy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="shows.html">Seriale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="production.html">Oryginały</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="min-vh-100 w-100 py-5">
+    <div id="localVideoWrapper" class="video-wrapper">
+    </div>
+</section>
+<div class="modal fade" id="staticBackdrop">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Informacje o użytkowniku</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+            </div>
+            <div class="modal-body">
+                <div id="modalUserText">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="logOutBtn">Wyloguj się</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/originals.js"></script>
+<script src="js/modal.js"></script>
+</body>
+</html>

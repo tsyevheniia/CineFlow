@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFlow</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+</head>
+<body style="display:none;">
+<nav class="navbar w-100 py-3 position-fixed z-1">
+    <div class="container">
+        <img class="navbar-brand" src="images/logo-transparent.png" alt="">
+        <a class="btn btn-primary px-4 py-2 text-white fw-medium" href="login.html">
+            Zaloguj się
+        </a>
+    </div>
+</nav>
+
+<header class="header d-flex justify-content-center align-items-center position-relative z-0 min-100 w-100 py-5 "
+        id="header">
+    <div class="d-flex flex-column justify-content-center align-items-center text-container h-100 w-100 position-relative z-1" id="headerDiv">
+        <h1 class="w-100 text-center display-5 text-white pt-5 px-3">
+            Twoje ulubione filmy - oglądaj teraz
+        </h1>
+        <p class="w-75 text-center text-white mb-5 mt-1">
+            Bez reklam, bez przerw – tylko niekończące się godziny rozrywki.
+        </p>
+
+        <form class="row g-3 justify-content-center needs-validation" id="mainForm" method="post" novalidate>
+            <div class="col-auto w-50">
+                <label for="inputEmail" class="visually-hidden">Email</label>
+                <input
+                        type="email"
+                        class="form-control form-control-lg shadow-sm"
+                        id="inputEmail"
+                        placeholder="Wpisz swój adres e-mail"
+                        required>
+                <div class="invalid-feedback">
+                    Proszę wprowadzić poprawny adres e-mail.
+                </div>
+                <div class="valid-feedback">
+                    Wygląda dobrze!
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary btn-lg px-4 py-2 fw-medium" id="emailBtn">
+                    Zarejestruj się
+                </button>
+            </div>
+        </form>
+    </div>
+</header>
+
+<div class="bg1 py-1"></div>
+
+<section id="accessibility"
+         class="w-100 h-100 bg-secondary py-5 d-flex justify-content-center align-items-center">
+    <div class="container-lg d-flex flex-column justify-content-center align-content-center px-3 flex-wrap">
+        <h4 class="text-white display-5 w-100 text-center mb-3">
+            Dostępne na Twoich ulubionych urządzeniach
+        </h4>
+        <p class="text-white text-center mb-3">
+            Oglądaj swoje ulubione filmy w wysokiej jakości na wszystkich urządzeniach – od telewizorów po telefony komórkowe, bez reklam i zakłóceń.
+        </p>
+        <div class="row text-center justify-content-center g-4 my-3" id="devices">
+
+            <div class="col-md-3 col-6">
+                <div class="device">
+                    <i class="bi bi-tv text-white icon"></i>
+                    <h4 class="text-white">Telewizory</h4>
+                    <p class="text-white">
+                        Oglądaj ulubione filmy na dużym ekranie, ciesząc się kinowymi wrażeniami w domowym zaciszu.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="device">
+                    <i class="bi bi-laptop text-white icon"></i>
+                    <h4 class="text-white">Komputery</h4>
+                    <p class="text-white">
+                        Korzystaj z wysokiej jakości streamingu na komputerze – w domu lub w podróży, bez utraty żadnej chwili.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="device">
+                    <i class="bi bi-tablet text-white icon"></i>
+                    <h4 class="text-white">Tablety</h4>
+                    <p class="text-white">
+                        Oglądaj filmy bezpośrednio na tablecie, zachowując pełną kontrolę nad swoim doświadczeniem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="device">
+                    <i class="bi bi-phone text-white icon"></i>
+                    <h4 class="text-white">Telefony komórkowe</h4>
+                    <p class="text-white">
+                        Ciesz się ulubionymi treściami w dowolnym miejscu dzięki płynnemu i wysokiej jakości streamingowi na telefonie.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="bg1 py-1"></div>
+
+<section id="questions" class="w-100 h-100 bg-secondary py-5">
+    <div class="container">
+        <h4 class="text-white display-5 w-100 text-center mb-3">
+            Najczęściej zadawane pytania
+        </h4>
+        <p class="text-white text-center mb-3">
+            Tutaj znajdziesz odpowiedzi na najczęściej zadawane pytania dotyczące naszej platformy streamingowej.
+            Jeśli potrzebujesz dodatkowej pomocy, skontaktuj się z naszym zespołem wsparcia.
+        </p>
+        <div class="accordion mt-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="text-white">Czym jest CineFlow?</span>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span class="text-white">
+                            Jest to nowoczesna platforma streamingowa oferująca bogatą bibliotekę filmów oraz treści ekskluzywnych w wysokej jakości.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="text-white">Jakie urządzenia są obsługiwane?</span>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span class="text-white">
+                            Platforma obsługuje telewizory Smart TV, smartfony, tablety oraz komputery. Szczegóły znajdują się w sekcji Dostępność.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="text-white">Ile to kosztuje?</span>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span class="text-white">
+                            Korzystanie z platformy CineFlow jest całkowicie bezpłatne. Oferujemy nieograniczony dostęp do treści bez żadnych opłat.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <span class="text-white">Czy muszę założyć konto?</span>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span class="text-white">
+                            Tak, utworzenie konta jest wymagane w celu uzyskania dostępu do platformy i jej funkcjonalności.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <span class="text-white">Czy dostępna jest aplikacja mobilna?</span>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span class="text-white">
+                            Obecnie platforma działa w wersji przeglądarkowej, jednak w przyszłości planowane jest udostępnienie aplikacji mobilnej.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFifth">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                        <span class="text-white">Jak mogę skontaktować się z pomocą techniczną?</span>
+                    </button>
+                </h2>
+                <div id="collapseFifth" class="accordion-collapse collapse" aria-labelledby="headingFifth"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <span class="text-white">
+                            W razie pytań lub problemów prosimy o kontakt poprzez sekcję Kontakt.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="bg1 py-1"></div>
+
+<section class="footer w-100 h-100 bg-secondary py-5 px-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 footerList">
+                <h6 class="text-white">Nasze sekcje:</h6>
+                <div><a class="text-decoration-none text-white" href="registration.html">Rejestracja</a></div>
+                <div><a class="text-decoration-none text-white" href="login.html">Logowanie</a></div>
+                <div><a class="text-decoration-none text-white" href="#accessibility">Dostępność</a></div>
+                <div><a class="text-decoration-none text-white" href="#questions">Pytania</a></div>
+            </div>
+
+            <div class="col-4 footerList text-center">
+                <h6 class="text-white">Przydatne linki:</h6>
+                <div>
+                    <a class="text-white text-decoration-none" href="">Kontakt</a>
+                </div>
+                <div>
+                    <a class="text-white text-decoration-none" href="">Polityka prywatności</a>
+                </div>
+                <div>
+                    <a class="text-white text-decoration-none" href="">Warunki korzystania</a>
+                </div>
+            </div>
+
+            <div class="col-4 footerList text-end" id="thirdItem">
+                <h6 class="text-white">Najlepsze filmy:</h6>
+                <div>
+                    <a href="https://www.imdb.com/chart/top" target="_blank" class="text-decoration-none text-white">
+                        IMDb Top 250
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.imdb.com/trailers/" target="_blank" class="text-decoration-none text-white">
+                        IMDb Zwiastuny
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.rottentomatoes.com/" target="_blank" class="text-decoration-none text-white">
+                        Rotten Tomatoes
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.festival-cannes.com/en/" target="_blank"
+                       class="text-decoration-none text-white">
+                        Cannes Festival
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5" id="footerEnd">
+            <p>&copy; 2026 CineFlow. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </div>
+</section>
+
+<script src="js/index.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

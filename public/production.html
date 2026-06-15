@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+</head>
+
+<body style="display:none;">
+<nav class="navbar navbar-expand-lg w-100 bg-primary">
+    <div class="container">
+        <div>
+            <button type="button" class="btn btn-primary" id="modalBtn">
+                <i class="bi bi-person-circle fs-1 text-white"></i>
+            </button>
+        </div>
+
+        <button class="navbar-toggler text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="main.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="films.html">Filmy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="shows.html">Seriale</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="w-100 py-5">
+    <div class="container">
+        <h1>Dramat psychologiczny</h1>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+            <div id="psychologicalCarousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center flex-wrap">
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video1.mp4">
+
+                                    <img src="images/psychologicalphoto1.jpg" class="card-img-top">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5>Przez mgłę</h5>
+                                    <p>
+                                        Fragmentaryczna sekwencja mgły, potłuczonego szkła i odległych postaci buduje
+                                        poczucie wewnętrznej dezorientacji. Ruch kamery odzwierciedla stan psychiczny,
+                                        w którym zanika jasność, a obecność innych wydaje się odległa i niepokojąca,
+                                        zamiast wspierająca.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4"><div class="img-wrapper position-relative"
+                                                        data-video="videos/video2.mp4">
+                                <img src="images/psychologicalphoto2.jpg" class="card-img-top">
+                                <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                            </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5>Korytarz</h5>
+                                    <p>
+                                        Zbliżenia i symboliczne obrazy zastępują pewność narracji. Cienie, światło oraz
+                                        wyizolowane detale ludzkiej obecności odzwierciedlają wewnętrzny konflikt,
+                                        emocjonalną ekspozycję i momenty, w których percepcja staje się niestabilna
+                                        oraz przytłaczająca.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4"><div class="img-wrapper position-relative"
+                                                        data-video="videos/video3.mp4">
+                                <img src="images/psychologicalphoto3.jpg" class="card-img-top">
+                                <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                            </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5>Terminalna cisza</h5>
+                                    <p>
+                                        Twarz kobiety, jej oddech oraz ruch w przestrzeniach przejściowych ujawniają
+                                        lęk, który nigdy w pełni nie wypływa na powierzchnię. Lotniska, okna,
+                                        odbicia — wszystko sugeruje wyjazd, lecz żadnego powrotu nie obiecuje.
+                                        Film uchwyca napięcie oczekiwania bez rozstrzygnięcia.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4"><div class="img-wrapper position-relative"
+                                                        data-video="videos/video4.mp4">
+                                <img src="images/psychologicalphoto4.jpg" class="card-img-top">
+                                <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                            </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5>Bezpańskie</h5>
+                                    <p>
+                                        Psy pojawiają się nie jako symbole, lecz jako świadkowie — głodne, mokre,
+                                        nieruchome. Ich cicha obecność przekazuje emocjonalne zaniedbanie i
+                                        wytrwałość. Brak ludzkiej troski staje się główną siłą emocjonalną.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center flex-wrap">
+
+                            <div class="card mb-4"><div class="img-wrapper position-relative"
+                                                        data-video="videos/video5.mp4">
+                                <img src="images/psychologicalphoto5.jpg" class="card-img-top">
+                                <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                            </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5>Długie popołudnie</h5>
+                                    <p>
+                                        Starsza kobieta przechodzi przez codzienne chwile, lecz każda czynność niesie
+                                        ciężar czasu. Spojrzenie w okno, przewijanie telefonu, trzymanie książki —
+                                        to nie nawyki, lecz punkty oparcia. Dramat tkwi w tym, co pamiętane, a nie
+                                        w tym, co się wydarza.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4"><div class="img-wrapper position-relative"
+                                                        data-video="videos/video6.mp4">
+                                <img src="images/psychologicalphoto6.jpg" class="card-img-top">
+                                <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                            </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5>Przed ciszą</h5>
+                                    <p>
+                                        Radość pojawia się na chwilę w ruchu i śmiechu, po czym zapada się w mrok i
+                                        stratę. Nagła zmiana obrazu z życia w następstwa oddaje to, jak trauma
+                                        bez ostrzeżenia przerywa rzeczywistość.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4"><div class="img-wrapper position-relative"
+                                                        data-video="videos/video7.mp4">
+                                <img src="images/psychologicalphoto7.jpg" class="card-img-top">
+                                <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                            </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5>Gdy wszyscy odchodzą</h5>
+                                    <p>
+                                        Ludzkie interakcje wypełniają kadr, aż nagle znikają. Puste miasto nie jest
+                                        opuszczone — jest wyczerpane. Pozostaje psychologiczne echo obecności,
+                                        długo po tym, jak ludzie odeszli.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4"><div class="img-wrapper position-relative"
+                                                        data-video="videos/video8.mp4">
+                                <img src="images/psychologicalphoto8.jpg" class="card-img-top">
+                                <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                            </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5>Nadal tutaj</h5>
+                                    <p>
+                                        Mężczyzna powtarza gesty bez celu. Dłonie pocierają się, ruch przyspiesza,
+                                        po czym zatrzymuje. Rutyna nie daje stabilności — ujawnia niemożność
+                                        ucieczki z własnej wewnętrznej pętli.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#psychologicalCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" data-bs-target="#psychologicalCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-100 py-5 originals-section">
+    <div class="container">
+        <h1>Okruchy codzienności</h1>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+            <div id="quietEveningsCarousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video1.mp4">
+                                    <img src="images/humanphoto1.jpg" class="card-img-top" alt="Road Between Us">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Droga między nami</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Mglista droga przecina las, gdy jedna osoba odchodzi.
+                                        Inni zostają, obserwując w ciszy.
+                                        Dystans rośnie bez słów, zamieniając ruch w rozstanie
+                                        i pozostawiając więź bez domknięcia.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video2.mp4">
+                                    <img src="images/humanphoto2.jpg" class="card-img-top" alt="Unspoken">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Niewypowiedziane</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Korytarz, płaczący cień na ścianie, dłoń uniesiona ku światłu.
+                                        Ludzkie emocje pojawiają się jedynie we fragmentach.
+                                        Brak wyjaśnienia pozostawia uczucia widoczne, lecz bez odpowiedzi.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video3.mp4">
+                                    <img src="images/humanphoto3.jpg" class="card-img-top" alt="Between Departures">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Między odlotami</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Kobieta przechodzi przez przestrzenie lotniska, oddychając ciężko.
+                                        Ruch jest stały, lecz kierunek pozostaje niepewny.
+                                        Ciało niesie napięcie, zanim pojawią się słowa.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video4.mp4">
+                                    <img src="images/humanphoto4.jpg" class="card-img-top" alt="Left Out">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Pozostawione</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Psy zostają same w śniegu, deszczu i w lesie.
+                                        Szukają, czekają i trwają.
+                                        Nieobecność człowieka staje się cichą siłą kształtującą kadr.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video5.mp4">
+                                    <img src="images/humanphoto5.jpg" class="card-img-top" alt="A Slow Afternoon">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Powolne popołudnie</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Starsza kobieta wykonuje codzienne rytuały.
+                                        Patrzy przez okno, trzyma książkę, siedzi w ciszy.
+                                        Życie toczy się bez pośpiechu, niosąc czas w każdym ruchu.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video6.mp4">
+                                    <img src="images/humanphoto6.jpg" class="card-img-top" alt="After">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Po wszystkim</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Zabawa i śmiech nagle ustępują mrokowi.
+                                        Świat zmienia się bez ostrzeżenia.
+                                        Pozostają puste przestrzenie i strata zbyt ciężka, by ją nazwać.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video7.mp4">
+                                    <img src="images/humanphoto7.jpg" class="card-img-top" alt="When the City Sleeps">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Gdy miasto zasypia</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Ludzie rozmawiają, poruszają się, istnieją — aż nagle znikają.
+                                        Ulice pustoszeją, budynki zostają.
+                                        Obecność człowieka gaśnie bez ceremonii.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video8.mp4">
+                                    <img src="images/humanphoto8.jpg" class="card-img-top" alt="The Everyday Weight">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Codzienny ciężar</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Mężczyzna powtarza te same gesty, dzień po dniu.
+                                        Rutyna nie przynosi ulgi.
+                                        Zwykłe życie staje się cichą walką.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#quietEveningsCarousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#quietEveningsCarousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-100 py-5">
+    <div class="container">
+        <h1>Tajemnica i napięcie</h1>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+            <div id="mysteryCarousel" class="carousel slide" data-bs-ride="false">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video1.mp4">
+                                    <img src="images/mysteryphoto1.jpg" class="card-img-top"
+                                         alt="The One Who Walks">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Ten, który odchodzi</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Postać idzie naprzód przez mglistą drogę, podczas gdy inni zostają z tyłu.
+                                        Las się zacieśnia, gdy widoczność znika.
+                                        Nic nie wyjaśnia, dokąd zmierza — ani dlaczego reszta się zatrzymuje.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video2.mp4">
+                                    <img src="images/mysteryphoto2.jpg" class="card-img-top"
+                                         alt="Signals Lost">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Utracone sygnały</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Czerwony korytarz się zacieśnia.
+                                        Na ścianie pojawia się płaczący cień.
+                                        Połączenie urywa się bez ostrzeżenia, pozostawiając jedynie fragmenty obecności.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video3.mp4">
+                                    <img src="images/mysteryphoto3.jpg" class="card-img-top"
+                                         alt="Observed">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Obserwowana</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Kobieta porusza się po nieznanych przestrzeniach.
+                                        Kamera podąża, nie ujawniając intencji.
+                                        Każdy kadr sugeruje, że nie jest sama — nawet gdy nikt się nie pojawia.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video4.mp4">
+                                    <img src="images/mysteryphoto4.jpg" class="card-img-top"
+                                         alt="Left Behind">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Instynkt</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Psy poruszają się w półmroku, zatrzymują się, nasłuchują.
+                                        Ich reakcje są szybkie i niepokojące, jakby wyczuwały obecność
+                                        czegoś niewidzialnego. Cisza i napięcie narastają wraz z każdym
+                                        ruchem.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center flex-wrap">
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video5.mp4">
+                                    <img src="images/mysteryphoto5.jpg" class="card-img-top"
+                                         alt="Watching Time">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Patrząc na czas</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Starsza kobieta siedzi w ciszy i patrzy na zewnątrz.
+                                        Czas nienaturalnie się wydłuża.
+                                        Czekanie staje się dominującym napięciem.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video6.mp4">
+                                    <img src="images/mysteryphoto6.jpg" class="card-img-top"
+                                         alt="The Moment After">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Chwila potem</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Zabawne dźwięki ostro przechodzą w ciemność.
+                                        Niewidoczny impuls zmienia wszystko.
+                                        Pozostają puste przestrzenie wypełnione zagrożeniem.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video7.mp4">
+                                    <img src="images/mysteryphoto7.jpg" class="card-img-top"
+                                         alt="When Silence Arrives">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Gdy nadchodzi cisza</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Tłoczne miejsca rozpływają się w pustkę.
+                                        Miasto zostaje, lecz ludzie znikają.
+                                        Cisza niesie ciężar czegoś niedokończonego.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video8.mp4">
+                                    <img src="images/mysteryphoto8.jpg" class="card-img-top"
+                                         alt="No Way Back">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Bez powrotu</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Mężczyzna biegnie, zatrzymuje się, powtarza.
+                                        Rutyna zaciska się jak pułapka.
+                                        Poczucie ucieczki znika, zanim pojawi się rozwiązanie.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" data-bs-target="#mysteryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#mysteryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-100 py-5">
+    <div class="container">
+        <h1>Filmy o czasie</h1>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+            <div id="minimalCarousel" class="carousel slide" data-bs-ride="false">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center flex-wrap">
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video1.mp4">
+                                    <img src="images/storyphoto1.jpg" class="card-img-top"
+                                         alt="Fog Road">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Mglista droga</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Droga, mgła, drzewa.
+                                        Postacie pojawiają się na chwilę, po czym znikają.
+                                        Scena nie oferuje wyjaśnień i nie wymaga ich.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video2.mp4">
+                                    <img src="images/storyphoto2.jpg" class="card-img-top"
+                                         alt="Fragments Before Meaning">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Fragmenty przed sensem</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Seria obrazów przedstawiona bez struktury narracyjnej.
+                                        Nie ma rozwoju, przyczyny ani zakończenia.
+                                        Film istnieje wyłącznie jako sekwencja chwil obserwowanych takimi, jakie są.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video3.mp4">
+                                    <img src="images/storyphoto3.jpg" class="card-img-top"
+                                         alt="Passing Through">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Przejście</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Kobieta porusza się, oddycha i znika z kadru.
+                                        Chwila nie znajduje domknięcia.
+                                        Sam ruch jest jedyną strukturą.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video4.mp4">
+                                    <img src="images/storyphoto4.jpg" class="card-img-top"
+                                         alt="Holding Position">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">W tej samej pozycji</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Te same postacie pozostają w kadrze.
+                                        Pogoda się zmienia, pozycje pozostają niemal niezmienne.
+                                        Scena trwa bez narracji i bez przerwy.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center flex-wrap">
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video5.mp4">
+                                    <img src="images/storyphoto5.jpg" class="card-img-top"
+                                         alt="Hands and Time">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Dłonie i czas</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Dłonie przewracają strony.
+                                        Ciało pozostaje niemal niewidoczne.
+                                        Życie ujawnia się tylko w drobnych szczegółach.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video6.mp4">
+                                    <img src="images/storyphoto6.jpg" class="card-img-top"
+                                         alt="Sequence">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Sekwencja</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Śmiech, ruch, ciemność.
+                                        Zdarzenia następują bez wyjaśnienia.
+                                        Cięcie staje się częścią opowieści.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video7.mp4">
+                                    <img src="images/storyphoto7.jpg" class="card-img-top"
+                                         alt="When Motion Ends">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Gdy ruch ustaje</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Ruch znika bez zapowiedzi.
+                                        Przestrzeń trwa sama, niezmieniona przez nieobecność.
+                                        To, co pozostaje, wydaje się trwałe, obojętne i niewzruszone.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card mb-4">
+                                <div class="img-wrapper position-relative"
+                                     data-video="videos/video8.mp4">
+                                    <img src="images/storyphoto8.jpg" class="card-img-top"
+                                         alt="Again">
+                                    <i class="bi bi-play-circle fs-1 position-absolute opacity-50 play-icon"></i>
+                                </div>
+                                <div class="card-body p-0 pt-2">
+                                    <h5 class="card-title">Jeszcze raz</h5>
+                                    <p class="card-text tv-description fs-6">
+                                        Scena nie buduje napięcia ani go nie rozładowuje.
+                                        Po prostu trwa — zatrzymuje się tylko dlatego, że kończy się nagranie,
+                                        a nie dlatego, że cykl zostaje domknięty.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#minimalCarousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#minimalCarousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="staticBackdrop">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Informacje o użytkowniku</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="modalUserText"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="logOutBtn">Wyloguj się</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/production.js"></script>
+<script src="js/modal.js"></script>
+
+</body>
+</html>
